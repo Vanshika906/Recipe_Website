@@ -1,0 +1,156 @@
+     /*.topnav {
+        background-color: rgb(16, 78, 117);
+        height: 50px;
+        width: 1500px; 
+      }
+      .topnav a {
+        float: left;
+        color:white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+      }
+      .container {
+      background-color: white;
+      position: relative;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+    }
+      .recipebox {
+        background-color: beige;
+        position:relative;
+        width: 1520px;
+        height: 1850px;
+        margin-top: 30px;
+        display : flex;
+        flex-direction:row;
+      }
+      .recipe {
+        width: 1450px;
+        height: 500px;
+        margin: 20px;
+      }
+      #recipe1 {
+        padding: 20px;
+      }
+      .image{
+        float: right;
+        width: 400px;
+        height: 450px;
+        border-radius: 20px;
+        transition:all 3s linear 1s;
+      }
+      .image:hover{
+        transform:scale(0.25);
+      }
+      #recipe2 {
+        padding: 20px;
+      }
+      #recipe3 {
+        padding: 20px;
+      }
+      .footer{
+        background-color: rgb(16, 78, 117);
+        height: 50px;
+        width: 1500px; 
+        padding-top:20px;
+        padding-left:20px;
+        font-size:20px;
+        color:white;
+      }
+       @media (min-width:500px) {
+           .recipebox{
+            flex-direction:column;
+           }
+        }
+      .headi{
+        transition: color -1s linear 1s;
+      }
+      .headi:hover{
+        color:blue;
+      }*/
+
+      .topnav {
+  background-color: rgb(16, 78, 117);
+  height: 50px;
+  width: 100%; /* Changed from fixed 1500px */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topnav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.container {
+  background-color: white;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipebox {
+  background-color: beige;
+  position:relative;
+  width: 100%;
+  max-width: 100vw; /* Makes it readable on large screens too */
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column; /* default is vertical */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.recipe {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 20px 0;
+}
+
+.image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 20px;
+  float: right;
+  transition: all 3s linear 1s;
+}
+
+.image:hover {
+  transform: scale(0.95); /* More subtle on all devices */
+}
+
+.footer {
+  background-color: rgb(16, 78, 117);
+  height: 60px;
+  width: 100%;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .recipebox {
+    flex-direction: column;
+  }
+}
+
+.headi {
+  transition: color 1s linear 1s; /* Fixed incorrect negative duration */
+}
+
+.headi:hover {
+  color: blue;
+}
+
+  
